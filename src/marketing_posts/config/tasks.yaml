@@ -28,7 +28,7 @@
     A PDF invoice in a Google Drive folder, and a draft of the email with the right details.
 
 invoices.team-members.preparation: >
-  description: >
+ description: >
     Access Google sheet {Team Invoices}.
     In sheet {Query} Copy the first member name from column {A} and paste in sheet {Invoice Template} in cell {C2}.
     The data of the team member will appear automatically.
@@ -36,6 +36,6 @@ invoices.team-members.preparation: >
     Navigate to {Apps Script} and run the scenario.
     Do this for all team members one by one in column A in sheet {Invoice Template}. No need to update the date.
  
-  expected_output: >
+ expected_output: >
     PDF invoices saved in the respective team members' folders in Google Drive.
 
