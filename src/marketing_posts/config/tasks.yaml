@@ -1,42 +1,41 @@
-research_task:
+ invoices.netze.preparation:
   description: >
-    Conduct a thorough research about the customer and competitors in the context
-    of {customer_domain}.
-    Make sure you find any interesting and relevant information given the
-    current year is 2024.
-    We are working with them on the following project: {project_description}.
+    Create invoices for clients. 
+    Update dates in the Google Sheets template {Rechnung - Maximilian Garmatsch}.
+    For cell {I8}, set {the sixth digit to the number of upcoming month}.
+    for cell {I10}, set to {first of the month}.
+    for cell {I11}, set to {end of the month}.
+    for cell {D16}, set {the month to the current month}.
+    Access the Google Sheet {Timesheet - Maximilian Garmatsch - Netze BW 2023/2024} and copy the cell {C52}
+    and paste in {Rechnung} template in cell {E16}.
+    save the updated document as a PDF.
+    Create a Google Drive folder in folder "Netze BW / NOW" and name it "2024-[current month]"
+    Upload the PDF to the Google Drive folder.
+    Access email account {maximilian.garmatsch@gmail.com}
+    Draft an email with details:
+    Subject: "Rechnung [MONTH in GERMAN] 2024"
+    Body: "
+    Sehr geerhte Damen und Herren,
+    anbei ist mein Timesheet und die Rechnung für [MONTH] 2024.
+    Das standard Zahlungsziel ist ok.
+    Über eine kurze Bestätigung wäre ich sehr dankbar, Anpassungen kann ich sofort nachreichen. Vielen Dank.
+    "
+    Find the signed Timesheet in the emails named "Timesheet - Maximilian Garmatsch - Netze BW - [Month] 2024 - Signed"
+    Add  Invoice
+    Add Recipient "e-rechnung@solcom.de"
+    Add CC "A.Braun@solcom.de"
   expected_output: >
-    A complete report on the customer and their customers and competitors,
-    including their demographics, preferences, market positioning and audience engagement.
+    A PDF invoice in a Google Drive folder, and a draft of the email with the right details.
 
-project_understanding_task:
+invoices.team-members.preparation: >
   description: >
-    Understand the project details and the target audience for
-    {project_description}.
-    Review any provided materials and gather additional information as needed.
+    Access Google sheet {Team Invoices}.
+    In sheet {Query} Copy the first member name from column {A} and paste in sheet {Invoice Template} in cell {C2}.
+    The data of the team member will appear automatically.
+    Update the date in sheet {Query} in cell {A10} by adding 2 weeks to it.
+    Navigate to {Apps Script} and run the scenario.
+    Do this for all team members one by one in column A in sheet {Invoice Template}. No need to update the date.
+ 
   expected_output: >
-    A detailed summary of the project and a profile of the target audience.
+    PDF invoices saved in the respective team members' folders in Google Drive.
 
-marketing_strategy_task:
-  description: >
-    Formulate a comprehensive marketing strategy for the project
-    {project_description} of the customer {customer_domain}.
-    Use the insights from the research task and the project understanding
-    task to create a high-quality strategy.
-  expected_output: >
-    A detailed marketing strategy document that outlines the goals, target
-    audience, key messages, and proposed tactics, make sure to have name, tatics, channels and KPIs
-
-campaign_idea_task:
-  description: >
-    Develop creative marketing campaign ideas for {project_description}.
-    Ensure the ideas are innovative, engaging, and aligned with the overall marketing strategy.
-  expected_output: >
-    A list of 5 campaign ideas, each with a brief description and expected impact.
-
-copy_creation_task:
-  description: >
-    Create marketing copies based on the approved campaign ideas for {project_description}.
-    Ensure the copies are compelling, clear, and tailored to the target audience.
-  expected_output: >
-    Marketing copies for each campaign idea.
