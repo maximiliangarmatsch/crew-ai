@@ -49,6 +49,6 @@ bill_payments: >
     log in to {ClickUp}, and Upload the invoices in the comments of the task {Telekom.hu: Pay & Download Invoices} 
     If both invoices sum is over {8000}, mention {Max} in the comments and leave a note.
 
- expected_output: >
+  expected_output: >
     Invoices are saved in the comments of the task.
  
