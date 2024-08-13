@@ -3,20 +3,24 @@ from crewai import Agent, Crew, Process, Task
 from crewai.project import CrewBase, agent, crew, task
 from crewai_tools import SerperDevTool, ScrapeWebsiteTool, PDFSearchTool
 
+folder_path = "./assets"
+files = os.listdir(folder_path)
+for file in files:
+	file_path = os.path.join(folder_path, file)
 pdf_search_tool = PDFSearchTool(
-    pdf = "/home/aamir/AI-agents-video-main/Crewai examples latest/crewAI-examples/finance_crew/src/finance_crew/report.pdf",
+	pdf = file_path,
 )
 
 @CrewBase
 class FinnaceCrew():
-	"""MarketingPosts crew"""
+	"""Finance crew"""
 	agents_config = 'config/agents.yaml'
 	tasks_config = 'config/tasks.yaml'
 
 	@agent
 	def admin_assistant_managr(self) -> Agent:
 		return Agent(
-			config=self.agents_config['admin_assistant_manager'],
+			config=self.agents_config['admin_research_assistant'],
 			tools=[SerperDevTool(), ScrapeWebsiteTool(), pdf_search_tool],
 			verbose=True,
 			memory=False,
@@ -42,7 +46,7 @@ class FinnaceCrew():
 	@task
 	def research_task(self) -> Task:
 		return Task(
-			config=self.tasks_config['admin_assistant_manager_task'],
+			config=self.tasks_config['admin_research_assistant_task'],
 			agent=self.admin_assistant_managr()
 		)
 
@@ -67,5 +71,5 @@ class FinnaceCrew():
 			tasks=self.tasks, # Automatically created by the @task decorator
 			process=Process.sequential,
 			verbose=2,
-			# process=Process.hierarchical, # In case you wanna use that instead https://docs.crewai.com/how-to/Hierarchical/
+			# process=Process.hierarchical,
 		)

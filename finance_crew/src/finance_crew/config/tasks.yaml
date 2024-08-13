@@ -1,47 +1,33 @@
-admin_assistant_manager_task:
+admin_research_assistant_task:
   description: >
-    please conduct a comprehensive analysis on bank account report and avialble investments in Real estate business in Florida on today date. 
-    The analysis should include the following key points:
-    
-    Bank Report Key Points: Give the opening blance, every transactions and closing balance in report.
-
+    Please conduct a comprehensive analysis of the bank account reports and available investments in the real estate business in Florida on today's date.  
+    The analysis should include the following key points: 
+    Bank report key points: Provide the opening balance, every transaction, and closing balance in the report.
     Business Overview: Briefly describe each business model found for investment, its services, and its target market.
-    
-    Risk Factors: Identify and discuss the major risk factors that for for innesting in that business.
-        
-    Competitive Landscape: Discuss competitive position in industry and how it compares to its major competitors.
-    
+    Risk Factors: Identify and discuss the major risk factors for investing in that business.
+    Competitive Landscape: Discuss the competitive position in the industry and how it compares to its major competitors.
     Future Outlook: Based on the information and your analysis, provide a brief outlook on future performance.
-    
     Please ensure that all information is sourced from authetic sources and the analysis is unbiased and factual.
   expected_output: >
-    Full analysis report in bullet points fulfill all given key points.
+    The analysis report in bullet points is in accordance with the given key points.
 
 chief_finance_officer_task:
   description: >
-    Using the insights provided by the Assistant Admin Manager, think through deeply the future implications of the points that are made. 
+    Using the insights provided by the Admin Research Assistant, think through deeply the future implications of the points that are made. 
     Consider the following questions as you craft your response:
-    
-    What is our plan regarding the investments  mentioned in the Assistant Admin Manager report?
-    
-    How much money do we need to investment give all options including key points for each?
-    
-    Do we have enough money to invest in plan approved with CEO?
-    
-    What is the strategy to get a loan for more money?
-    
-    Provide a detailed analysis on each of the questions. And also get approved each questions with by the CEO to take furthre steps. If required 
-    loan for investment do internet search for best avialble loan plan. 
+    What are our plans for the investments mentioned in the Admin Research Assistant report?
+    How much money do we need to invest given all options including key points for each?
+    Is there sufficient money to invest in a plan that has been approved by the CEO?
+    What are the methods to obtain a loan for more money?
+    Provide a detailed analysis of each of the questions. To take further steps, it is important to obtain approval for each question from the CEO.
+    For an investment loan, do an internet search for the best available loan plan. 
   expected_output: >
-    Analysis report with deeper insights like a real human capabilities.
-
+    A report that analyzes and provides deeper insights, including actual human capabilities.
 chief_excutive_officer_task:
   description: >
-    Using the insights provided by the Assitant Admin Manager and Chief Finance Officer, please craft an expertly
-    styled decision that is targeted towards the investor community. Make sure to also include the long-term implications
-    of the insights that are mentioned.  
+    Using the insights provided by the Admin Research Assistant and Chief Finance Officer, please craft an expert-styled decision 
+    that is targeted toward the investor community. It is important to consider the long-term consequences of the insights mentioned.  
     
-    Please ensure that you are the CEO of the company you may approved the Chief Finnace Officer decision or also ask for chnages with
-    directed guidelines.
+    Ensure that you have the authority to be the CEO of the company and approve or request changes to the guidelines directed by the Chief Finance Officer.
   expected_output: >
-    A expertly styled decsion making to take decision for the done  by your co-worker, Admin Assistant Manager and Chief Finance Officer.
+    Expert-styled decision-making like a real human in coordination with your Admin Research Assistant and Chief Finance Officer.
