@@ -23,7 +23,7 @@ chief_finance_officer_task:
     For an investment loan, do an internet search for the best available loan plan. 
   expected_output: >
     A report that analyzes and provides deeper insights, including actual human capabilities.
-chief_excutive_officer_task:
+chief_executive_officer_task:
   description: >
     Using the insights provided by the Admin Research Assistant and Chief Finance Officer, please craft an expert-styled decision 
     that is targeted toward the investor community. It is important to consider the long-term consequences of the insights mentioned.  
