@@ -30,11 +30,12 @@
 invoices.team-members.preparation: >
  description: >
     Access Google sheet {Team Invoices}.
-    In sheet {Query} Copy the first member name from column {A} and paste in sheet {Invoice Template} in cell {C2}.
-    The data of the team members will appear automatically.
+    Locate sheet {Query}, Copy the first member name from column {A}, and paste in sheet {Invoice Template} in cell {C2}.
+    The team members' data will appear automatically.
     Update the date in sheet {Query} in cell {A10} by adding 2 weeks to it.
     Navigate to {Apps Script} and run the scenario.
-    Do this for all team members one by one in column A in sheet {Invoice Template}. No need to update the date.
+    Repeat the process for the next member name in column {A} in sheet {Query}, except for updating the date step.
+    Do this for all team members one by one until the end.
  
  expected_output: >
     PDF invoices are saved in the respective team members' folders in Google Drive.
@@ -44,11 +45,12 @@ bill_payments: >
     Log into {Telekom.hu}
     In section {Bills} click on {Payment}
     Click on the default card
-    Download the invoices
-    Rename them {Telekom Home [Date]} and {Telekom mobile [Date]}
-    log in to {ClickUp}, and Upload the invoices in the comments of the task {Telekom.hu: Pay & Download Invoices} 
-    If both invoices sum is over {8000}, mention {Max} in the comments and leave a note.
+    After the message " You don't have any pending invoices " Appear, Locate " Details " and click on it for the first invoice.
+    Click on " Download PDF invoice"
+    Repeat the locating for " details " for the second invoice.
+    Rename the first invoice {Telekom Home [Date]} and the second invoice {Telekom mobile [Date]}.
+    log into {ClickUp}, and Upload the invoices in the comments of the task {Telekom.hu: Pay & Download Invoices} 
+    If both invoices sum is over {8000}, write a comment " it's over 8000+ this month", and mention {Max}.
 
  expected_output: >
     Invoices are saved in the comments of the task.
- 
