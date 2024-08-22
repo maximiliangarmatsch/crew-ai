@@ -12,8 +12,6 @@ By [@joaomdmoura](https://x.com/joaomdmoura)
 - [Support and Contact](#support-and-contact)
 - [License](#license)
 
-## CrewAI Framework
-CrewAI is designed to facilitate the collaboration of role-playing AI agents. In this example, these agents work together to create a comprehensive marketing strategy and develop compelling marketing content.
 
 ## Running the Script
 It uses GPT-4o by default so you should have access to that to run it.
